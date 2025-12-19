@@ -24,16 +24,32 @@ Este repositório documenta **meu aprendizado prático em Segurança Defensiva (
 
 ---
 
-## 📂 Estrutura do repositório
+## 📂 Repository Structure
 
 ```
-/notes
-  ├─ soc-fundamentals.md
-  ├─ threat-detection-basics.md
-  ├─ network-analysis-intro.md
+soc-learning-notes/
+├── README.md
+├── notes/
+│   ├── soc-fundamentals.md
+│   ├── threat-detection-basics.md
+│   └── network-analysis-intro.md
+├── labs/
+│   ├── README.md
+│   ├── linux-system-basics/
+│   │   ├── README.md
+│   │   ├── commands.md
+│   │   ├── screenshots/
+│   │   │   └── Pratique_Atividade_Pratica_Segurança_SOC.png
+│   │   └── academic-material/
+│   │       ├── README.md
+│   │       └── pratique_sistemas_computacionais_seguranca2_20250624174934.pptx
+└── tools/
+    ├── README.md
+    └── simple-log-analyzer/
+        ├── README.md
+        ├── analyzer.py
+        └── sample.log
 
-/examples
-  ├─ sample-alert-analysis.md
 ```
 
 ---
