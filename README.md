@@ -49,10 +49,7 @@ soc-learning-notes/
         ├── README.md
         ├── analyzer.py
         └── sample.log
-
-
----
-
+```
 ## 📘 Notes
 
 The `notes/` directory contains theoretical content and study notes
