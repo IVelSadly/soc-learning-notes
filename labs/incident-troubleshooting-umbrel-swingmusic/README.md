@@ -136,7 +136,11 @@ Practical Docker and Linux troubleshooting skills
 
 🖼️ Evidence
 
-[Screenshot_2.png]
+### Playback error
+![Playback error](screenshots/screenshot.png)
+
+### Verifyng containers
+![Docker ps](screenshots/Screenshot_2.png)
 
 ---
 
