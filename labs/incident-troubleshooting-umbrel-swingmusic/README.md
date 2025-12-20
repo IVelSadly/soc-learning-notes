@@ -139,7 +139,7 @@ Practical Docker and Linux troubleshooting skills
 ### Playback error
 ![Playback error](screenshots/screenshot.png)
 
-### Verifyng containers
+### Verifying containers
 ![Docker ps](screenshots/Screenshot_2.png)
 
 ---
