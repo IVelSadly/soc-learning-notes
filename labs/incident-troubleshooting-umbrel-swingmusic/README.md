@@ -36,7 +36,6 @@ This case documents the investigation, root cause analysis, and lessons learned.
   ```  
 Confirmed Swing Music container was healthy and accessible.
 
----
 
 2️⃣ Filesystem & Permissions Check
 Verified music files existed inside the container.
@@ -48,7 +47,6 @@ cat "/music/Downloads/Musicas Levi/example.mp3" > /dev/null
 ```
 No permission or path issues found.
 
----
 
 3️⃣ Volume & Path Mapping Analysis
 Inspected container mounts:
@@ -60,7 +58,6 @@ Identified that /downloads was correctly bind-mounted from the host.
 
 Verified indexing was reading correct paths.
 
----
 
 4️⃣ Indexing vs Playback Behavior
 Logs showed:
@@ -139,7 +136,7 @@ Practical Docker and Linux troubleshooting skills
 
 🖼️ Evidence
 
-{Screenshot_2.png}
+[Screenshot_2.png]
 
 ---
 
