@@ -108,6 +108,11 @@ Feel free to open an issue or pull request.
 
 ---
 
+![GitHub Repo stars](https://img.shields.io/github/stars/IVelSadly/soc-learning-notes?style=social)
+![Last commit](https://img.shields.io/github/last-commit/IVelSadly/soc-learning-notes)
+
+---
+
 ## 📜 License
 
 This project is licensed under the MIT License.
