@@ -1,4 +1,6 @@
 # 🚀 SOC Learning Notes
+![GitHub Repo stars](https://img.shields.io/github/stars/IVelSadly/soc-learning-notes?style=social)
+![Last commit](https://img.shields.io/github/last-commit/IVelSadly/soc-learning-notes)
 
 This repository contains my **cybersecurity learning journey**, focused on Security Operations Center (SOC), network fundamentals, system analysis, logs investigation, and hands-on labs.  
 It serves as my **technical portfolio** to showcase practical skills, structured documentation, and continuous progress in security fundamentals.
@@ -111,8 +113,4 @@ Feel free to open an issue or pull request.
 ## 📜 License
 
 This project is licensed under the MIT License.
-
-![GitHub Repo stars](https://img.shields.io/github/stars/IVelSadly/soc-learning-notes?style=social)
-![Last commit](https://img.shields.io/github/last-commit/IVelSadly/soc-learning-notes)
-
 ---
