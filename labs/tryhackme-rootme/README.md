@@ -62,7 +62,7 @@ The /panel/ directory contained a file upload form.
 ## 🖥️ Step 4 — Initial Access (Reverse Shell)
 A Netcat listener was started on the attacker machine:
 ```bash
-sudo nc -nlvp 443
+sudo nc -nlvp 9001
 ```
 ![Netcat Listening](evidences/nc_443.png)
 
